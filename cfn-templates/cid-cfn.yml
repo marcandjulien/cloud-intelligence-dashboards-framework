@@ -233,13 +233,13 @@ Parameters:
     Description: Choose a tag name for Primary Tag. Can be any Tag name (Owner, Environment, Finops_Exception). Currently used only in Compute Optimizer dashboard. Leave as is if not sure. This is a Tag, not CostAllocationTag (MyTag not resource_tags_my_tag).
     Default: "owner"
     MinLength: 1 # cid cmd do not accept empty parameters
-    AllowedPattern: "[a-zA-Z0-9_]*"
+    AllowedPattern: "[a-zA-Z0-9_:]*"
   SecondaryTagName:
     Type: String
     Description: Choose a tag name for Secondary Tag. Can be any Tag name (Owner, Environment, Finops_Exception). Currently used only in Compute Optimizer dashboard. Leave as is if not sure. This is a Tag, not CostAllocationTag (MyTag not resource_tags_my_tag).
     Default: "environment"
     MinLength: 1 # cid cmd do not accept empty parameters
-    AllowedPattern: "[a-zA-Z0-9_]*"
+    AllowedPattern: "[a-zA-Z0-9_:]*"
   PermissionsBoundary:
     Type: String
     Default: ''
